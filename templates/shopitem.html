@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="text-center border border-secondary rounded-pill bg-primary">
+    <h2>{{ item['name'] }}</h2>
+    <p>{{ item['price'] }}</p>
+    <img src="{{ '../static/' + item['image'] }}" alt="LOL" height="200" width="200" /><br>
+    <a class="btn btn-secondary" href="">Buy</a><br>
+    <a class="btn btn-secondary" href="">Add to shopping cart</a><br>
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+<nav class="navbar navbar-dark bg-dark">
+    <li><a class="btn btn-secondary" href="../home">Home</a></li>
+    {% if session['username'] %}
+      <li><a class="btn btn-secondary" href="../profile">Edit profile</a></li>
+      <li><a class="btn btn-secondary" href="../logout">Logout</a></li>
+    {% else %}
+      <li><a class="btn btn-secondary" href="../register">Register</a></li>
+      <li><a class="btn btn-secondary" href="../login">Login</a></li>
+    {% endif %}
+    <li><a class="btn btn-secondary" href="../shop">Shop</a></li>
+    <li><a class="btn btn-secondary" href="../contact">Contact</a></li>
+  </nav>

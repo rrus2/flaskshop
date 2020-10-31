@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+{% for product in products %}
+<div class="text-center border border-secondary rounded-pill bg-primary">
+    <p>{{ product['name'] }}</p>
+    <p>{{ product['price'] }}</p>
+    <img src="{{ 'static/' + product['image'] }}" alt="LOL" height="200" width="200" /><br>
+    <a class="btn btn-secondary" href="shopitem/{{product['name']}}"></a>
+</div>
+{% endfor %}
+{% endblock %}
